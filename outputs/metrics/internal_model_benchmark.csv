@@ -1,0 +1,11 @@
+candidate,algorithm,preprocessing,n_clusters,fit_rows,scope,status,min_cluster_share,silhouette,davies_bouldin,calinski_harabasz,noise_share
+KMeans_Robust_k4,MiniBatchKMeans,log+winsor+RobustScaler,4.0,300000,full development,evaluated,0.14691666666666667,0.23834863305091858,1.524494482031987,3105.728643806424,
+KMeans_Robust_k5,MiniBatchKMeans,log+winsor+RobustScaler,5.0,300000,full development,evaluated,0.005176666666666667,0.2064731866121292,1.7176935199400933,2351.9357315353227,
+KMeans_Robust_k6,MiniBatchKMeans,log+winsor+RobustScaler,6.0,300000,full development,evaluated,0.02765,0.19536711275577545,1.7454999713720756,2312.140912675471,
+KMeans_Robust_k7,MiniBatchKMeans,log+winsor+RobustScaler,7.0,300000,full development,evaluated,0.004196666666666666,0.17759709060192108,1.9067622818807124,1919.6485107663152,
+KMeans_Standard_k6,MiniBatchKMeans,log+winsor+StandardScaler,6.0,300000,full development,evaluated,0.12410333333333333,0.10095327347517014,2.5657033299033776,527.3834215355092,
+KMeans_Robust_PCA90_k6,MiniBatchKMeans,robust+PCA(11 comps),6.0,300000,full development,evaluated,0.02765,0.24331378936767578,1.466585865059,3278.1452969832885,
+GMM_diag_Robust_k5,GaussianMixture,log+winsor+RobustScaler,5.0,60000,representative sample,evaluated,0.0274,0.2213994413614273,1.4604586720103736,2494.962738822186,
+GMM_diag_Robust_k6,GaussianMixture,log+winsor+RobustScaler,6.0,60000,representative sample,evaluated,0.0124,0.191427543759346,2.8715963861830893,2100.166556705641,
+Hierarchical_Ward_k6,AgglomerativeClustering,log+winsor+RobustScaler,6.0,8000,diagnostic sample; no native scoring,evaluated,0.02725,0.23589009046554565,1.4838517126936395,2270.161796447974,
+HDBSCAN_Robust,HDBSCAN,log+winsor+RobustScaler,,0,optional dependency,skipped: package unavailable,,,,,

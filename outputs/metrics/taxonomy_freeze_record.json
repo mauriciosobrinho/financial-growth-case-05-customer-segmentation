@@ -1,0 +1,29 @@
+{
+  "freeze_timestamp_stage": "before Q2/Q3 future-outcome inspection",
+  "development_quarter": "2026Q1",
+  "validation_quarter": "2026Q2",
+  "holdout_quarter": "2026Q3",
+  "champion": "KMeans_Robust_k6",
+  "n_clusters": 6,
+  "feature_count_before_missing_indicators": 35,
+  "future_outcomes_excluded": [
+    "revenue_next_90d",
+    "margin_next_90d",
+    "churn_next_90d",
+    "product_adoption_next_90d"
+  ],
+  "selection_evidence": {
+    "silhouette": 0.19536711275577545,
+    "davies_bouldin": 1.7454999713720756,
+    "minimum_cluster_share": 0.02765
+  },
+  "rationale": "Six robust K-Means segments balance separation, minimum operational scale, native out-of-sample scoring, explainable centroids, and stable business profiles. PCA was not selected because its modest geometric benefit did not offset lost interpretability; hierarchical and density approaches remained diagnostic samples.",
+  "cluster_name_map": {
+    "4": "Comerciantes Ativos",
+    "2": "Patrimônio & Valor",
+    "0": "Crédito Intensivo",
+    "1": "Digitais Engajados",
+    "3": "Baixo Engajamento",
+    "5": "Relacionamento Essencial"
+  }
+}

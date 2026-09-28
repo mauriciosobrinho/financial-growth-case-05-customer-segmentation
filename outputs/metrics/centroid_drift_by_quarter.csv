@@ -1,0 +1,19 @@
+snapshot_quarter,cluster_id,segment_name,centroid_distance_from_q1_model
+2026Q1,0,Crédito Intensivo,0.012025132775306702
+2026Q1,1,Digitais Engajados,0.02036334201693535
+2026Q1,2,Patrimônio & Valor,0.017601346597075462
+2026Q1,3,Baixo Engajamento,0.025173591449856758
+2026Q1,4,Comerciantes Ativos,0.0300324484705925
+2026Q1,5,Relacionamento Essencial,0.022413041442632675
+2026Q2,0,Crédito Intensivo,0.2065533995628357
+2026Q2,1,Digitais Engajados,0.1731342077255249
+2026Q2,2,Patrimônio & Valor,0.20413276553153992
+2026Q2,3,Baixo Engajamento,0.1701136976480484
+2026Q2,4,Comerciantes Ativos,0.2343343049287796
+2026Q2,5,Relacionamento Essencial,0.18002353608608246
+2026Q3,0,Crédito Intensivo,0.39558273553848267
+2026Q3,1,Digitais Engajados,0.329671710729599
+2026Q3,2,Patrimônio & Valor,0.3860922157764435
+2026Q3,3,Baixo Engajamento,0.30900582671165466
+2026Q3,4,Comerciantes Ativos,0.4102347791194916
+2026Q3,5,Relacionamento Essencial,0.34131497144699097

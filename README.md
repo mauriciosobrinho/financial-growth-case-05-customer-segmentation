@@ -33,6 +33,18 @@ Os outcomes futuros nunca participam do preprocessamento, da escolha do algoritm
 - validação externa por receita, margem, churn e adoção futura;
 - tradução dos perfis em hipóteses de ação, guardrails e plano de teste.
 
+## Resultado executivo
+
+O champion congelado foi um **Robust K-Means com seis segmentos**. A opção com quatro clusters apresentou Silhouette superior, e a versão com PCA também melhorou a separação interna; ainda assim, ambas perderam diferenciação operacional importante. O desenho com seis clusters preservou um nicho de comerciantes de 2,8%, manteve scoring direto fora da amostra e produziu seis playbooks distintos.
+
+- retenção de rótulo entre 2026Q2 e 2026Q3: **62,2%**, contra **35,7%** da baseline RFM;
+- razão entre maior e menor receita futura média no holdout: **11,1×**;
+- spread de churn futuro entre segmentos: **5,3 p.p.**;
+- spread de adoção futura de produto: **7,7 p.p.**;
+- seis segmentos acionáveis: Digitais Engajados, Baixo Engajamento, Crédito Intensivo, Patrimônio & Valor, Relacionamento Essencial e Comerciantes Ativos.
+
+Os resultados sustentam a taxonomia como camada de estratégia e desenho experimental. Não sustentam, isoladamente, rollout causal de campanhas.
+
 ## Estrutura
 
 ```text
@@ -68,4 +80,3 @@ O script regenera os artefatos analíticos e o notebook. O CSV raw é versionado
 O melhor clustering não é necessariamente aquele com maior Silhouette. A solução final deve equilibrar separação matemática, estabilidade temporal, interpretabilidade, diferenciação futura e capacidade de gerar ações de negócio.
 
 Os segmentos identificam padrões e apoiam hipóteses de ação; eles não provam que uma campanha, oferta ou abordagem causará melhora de receita, retenção ou adoção. Essas hipóteses devem ser validadas por experimentos controlados.
-

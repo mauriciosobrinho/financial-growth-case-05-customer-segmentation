@@ -4,7 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 .artifact-validation/
+.chart-data-*/
 presentation/_build/
 data/processed/
 work/
-

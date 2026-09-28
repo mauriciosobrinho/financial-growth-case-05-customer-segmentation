@@ -1,0 +1,13 @@
+snapshot_quarter,outcome,test,statistic,p_value
+2026Q1,revenue_next_90d,Kruskal-Wallis,197504.76266702006,0.0
+2026Q1,margin_next_90d,Kruskal-Wallis,199169.02043192307,0.0
+2026Q1,churn_next_90d,Chi-square,1415.578197613082,5.797485959627559e-304
+2026Q1,product_adoption_next_90d,Chi-square,1813.5887683567837,0.0
+2026Q2,revenue_next_90d,Kruskal-Wallis,196383.87248615248,0.0
+2026Q2,margin_next_90d,Kruskal-Wallis,198105.70187750406,0.0
+2026Q2,churn_next_90d,Chi-square,1638.532006094269,0.0
+2026Q2,product_adoption_next_90d,Chi-square,2022.768168587356,0.0
+2026Q3,revenue_next_90d,Kruskal-Wallis,195236.59183941307,0.0
+2026Q3,margin_next_90d,Kruskal-Wallis,196835.42826227375,0.0
+2026Q3,churn_next_90d,Chi-square,1556.4519942002726,0.0
+2026Q3,product_adoption_next_90d,Chi-square,2193.531282977394,0.0

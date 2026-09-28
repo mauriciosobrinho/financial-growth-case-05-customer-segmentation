@@ -1,0 +1,7 @@
+segment_name,q1_share,business_objective,action_hypothesis,primary_guardrail,q3_revenue_next_90d,q3_churn_next_90d,q3_product_adoption_next_90d,causal_status
+Digitais Engajados,0.3936233333333333,Cross-sell digital,Next-best-product em canais próprios,Fadiga e opt-out,143.4294101928154,0.05556444515561245,0.19249539963197057,Hypothesis requiring controlled experiment
+Baixo Engajamento,0.27681,Retenção diagnóstica,Testar reativação de baixo custo antes de incentivo,ROI incremental e sleeping dogs,41.02632930533991,0.09077161952339162,0.1151286032538986,Hypothesis requiring controlled experiment
+Crédito Intensivo,0.11926666666666667,Crédito responsável,Limite e parcelamento com elegibilidade e risco,Inadimplência e sobre-endividamento,405.94528977225207,0.044908426950631394,0.1771527332534218,Hypothesis requiring controlled experiment
+Patrimônio & Valor,0.10656666666666667,Proteção e profundidade,"Assessoria, investimentos e benefícios de relacionamento",Evasão de saldo e churn,279.44756318011537,0.0472735921983707,0.19251352797764168,Hypothesis requiring controlled experiment
+Relacionamento Essencial,0.07608333333333334,Educação e ativação,Jornadas simples para aumentar uso e profundidade,Custo de contato,106.33533034024386,0.05700074827237114,0.16087855979576565,Hypothesis requiring controlled experiment
+Comerciantes Ativos,0.02765,Relacionamento e adquirência,"Ofertas de POS, capital de giro e serviços transacionais",Margem e reclamações,456.59639293496963,0.03750430095194403,0.16011010436976716,Hypothesis requiring controlled experiment

@@ -1,0 +1,12 @@
+{
+  "champion": "KMeans_Robust_k6",
+  "segments": 6,
+  "development_rows": 300000,
+  "q2_to_q3_label_retention": 0.6215433333333333,
+  "rfm_q2_to_q3_label_retention": 0.35744,
+  "q3_revenue_ratio_max_min": 11.129350362708173,
+  "q3_churn_spread_pp": 5.326731857144759,
+  "q3_adoption_spread_pp": 7.738492472374308,
+  "future_outcome_tests_all_p_below_0_001": true,
+  "actionable_segments": 6
+}

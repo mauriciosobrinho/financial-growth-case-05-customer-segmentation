@@ -1,0 +1,53 @@
+column,group,dtype,description
+customer_id,Identificação e tempo,object,Identificador anonimizado do cliente; repete-se nos três snapshots trimestrais.
+snapshot_quarter,Identificação e tempo,object,Snapshot trimestral da base.
+reference_date,Identificação e tempo,datetime64[ns],Data de referência do snapshot.
+customer_tenure_months,Identificação e tempo,int64,Tempo de relacionamento do cliente em meses.
+customer_segment,Perfil e segmentação cadastral,object,Segmento cadastral/comercial observável; não é o cluster analítico a ser construído.
+region,Perfil e segmentação cadastral,object,Macrorregião do cliente.
+merchant_flag,Perfil e segmentação cadastral,int64,Indicador de atividade merchant.
+merchant_segment,Perfil e segmentação cadastral,object,Porte operacional do merchant ou NotMerchant.
+income_band,Perfil e segmentação cadastral,object,Faixa categórica de renda/proxy socioeconômico.
+relationship_tier,Perfil e segmentação cadastral,object,Tier de relacionamento com a instituição.
+recency_days,RFM,int64,Dias desde a última transação antes do snapshot.
+frequency_90d,RFM,int64,Quantidade de transações nos últimos 90 dias.
+monetary_90d,RFM,float64,Valor transacionado nos últimos 90 dias.
+avg_ticket_90d,RFM,float64,Ticket médio nos últimos 90 dias.
+txn_active_days_90d,RFM,int64,Dias com atividade transacional nos últimos 90 dias.
+avg_balance_90d,Conta e saldo,float64,Saldo médio nos últimos 90 dias; contém zeros legítimos.
+max_balance_90d,Conta e saldo,float64,Saldo máximo nos últimos 90 dias.
+balance_volatility_90d,Conta e saldo,float64,Proxy de volatilidade do saldo.
+income_proxy,Conta e saldo,float64,Proxy contínuo de renda.
+salary_inflow_flag,Conta e saldo,int64,Indicador de entrada recorrente de salário.
+has_credit_card,Cartão e crédito,int64,Indicador de cartão ativo.
+credit_limit,Cartão e crédito,float64,Limite de crédito disponível.
+credit_utilization,Cartão e crédito,float64,Utilização do limite; estruturalmente ausente para clientes sem cartão.
+card_spend_90d,Cartão e crédito,float64,Gasto no cartão em 90 dias.
+pix_count_90d,Pix,int64,Quantidade de transações Pix em 90 dias.
+pix_value_90d,Pix,float64,Valor de Pix em 90 dias.
+merchant_txn_count_90d,Merchant,int64,Quantidade de transações merchant em 90 dias.
+merchant_gmv_90d,Merchant,float64,GMV merchant em 90 dias.
+has_loan,Produtos e investimentos,int64,Indicador de empréstimo ativo.
+loan_balance,Produtos e investimentos,float64,Saldo de empréstimo.
+has_investment,Produtos e investimentos,int64,Indicador de investimento ativo.
+investment_balance,Produtos e investimentos,float64,Saldo investido.
+has_insurance,Produtos e investimentos,int64,Indicador de seguro ativo.
+has_pos,Produtos e investimentos,int64,Indicador de POS ativo.
+number_of_products,Produtos e investimentos,int64,Número de produtos ativos.
+app_sessions_90d,Digital,float64,Sessões no app em 90 dias.
+app_active_days_90d,Digital,int64,Dias ativos no app em 90 dias.
+days_since_last_login,Digital,float64,Dias desde o último login; contém código sentinela 9999 em parte da base.
+push_open_rate_90d,Digital,float64,Taxa de abertura de push; possui missing crescente nos snapshots.
+email_open_rate_90d,Digital,float64,Taxa de abertura de e-mail; possui missing crescente.
+campaigns_received_90d,CRM,int64,Quantidade de campanhas recebidas em 90 dias.
+campaign_clicks_90d,CRM,int64,Quantidade de cliques em campanhas em 90 dias.
+campaign_click_rate_90d,CRM,float64,Taxa de clique histórica.
+revenue_90d,Valor econômico atual,float64,Receita gerada nos 90 dias anteriores ao snapshot.
+margin_90d,Valor econômico atual,float64,Margem nos 90 dias anteriores ao snapshot.
+total_financial_assets,Features redundantes deliberadas,float64,Soma aproximada de saldo e investimento; deliberadamente redundante.
+transactional_intensity,Features redundantes deliberadas,float64,Frequência diária derivada de frequency_90d; deliberadamente redundante.
+engagement_index_raw,Features redundantes deliberadas,float64,Índice composto de engajamento digital/CRM; deliberadamente correlacionado com seus componentes.
+revenue_next_90d,Outcomes futuros - validação externa,float64,"Receita futura em 90 dias; apenas para validação externa, nunca para formar clusters."
+margin_next_90d,Outcomes futuros - validação externa,float64,Margem futura em 90 dias; apenas para validação externa.
+churn_next_90d,Outcomes futuros - validação externa,int64,Outcome futuro binário de churn; apenas para validação externa.
+product_adoption_next_90d,Outcomes futuros - validação externa,int64,Outcome futuro binário de adoção de novo produto; apenas para validação externa.
